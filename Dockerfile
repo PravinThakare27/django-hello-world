@@ -2,11 +2,11 @@ FROM python:3.6
 
 MAINTAINER Pravin Thakare "Pthakare27@gmail.com"
 
-COPY requirements.txt /app
+COPY requirements.txt /home/app/webapp
 
-WORKDIR /app
+WORKDIR /home/app/webapp
 
-EXPOSE 5000
+EXPOSE 8080
 
 RUN pip install -r requirements.txt
 
