@@ -4,6 +4,8 @@ MAINTAINER Pravin Thakare "Pthakare27@gmail.com"
 
 COPY requirements.txt /home/app/webapp
 
+RUN mkdir /home/app/webapp
+
 WORKDIR /home/app/webapp
 
 EXPOSE 8080
