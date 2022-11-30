@@ -4,9 +4,6 @@ MAINTAINER Pravin Thakare "Pthakare27@gmail.com"
 
 COPY requirements.txt /home/app/webapp
 
-
-WORKDIR /home/app/webapp
-
 EXPOSE 8080
 
 RUN pip install -r requirements.txt
