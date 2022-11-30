@@ -1,10 +1,12 @@
 FROM python:3.6
 
-MAINTAINER Pravin Thakare "Pthakare27@gmail.com"
+MAINTAINER Ashok Bollepalli "ashokitschool@gmail.com"
 
-COPY requirements.txt /home/app/webapp
+COPY . /app
 
-EXPOSE 8080
+WORKDIR /app
+
+EXPOSE 5000
 
 RUN pip install -r requirements.txt
 
